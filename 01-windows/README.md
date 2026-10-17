@@ -104,11 +104,13 @@ robocopy D:\Backup\Documents C:\Users\user01\Documents /E
 
 ## Danh sách sự cố đã xử lý
 
-*(Chưa có – sẽ cập nhật sau khi hoàn thành phần ticket)*
-
 | Mã | Sự cố | Ưu tiên | Trạng thái |
 |---|---|---|---|
-| – | – | – | – |
+| [T001](tickets/T001-startup-slow.md) | Máy khởi động chậm | Thấp | Đã xử lý ✅ |
+| [T002](tickets/T002-disk-full.md) | Ổ D báo đầy | Cao | Đã xử lý ✅ |
+| [T003](tickets/T003-forgot-password.md) | Quên mật khẩu user01 | Trung bình | Đã xử lý ✅ |
+| [T004](tickets/T004-account-locked.md) | Tài khoản user01 bị khóa | Cao | Đã xử lý ✅ |
+| [T005](tickets/T005-network-disconnected.md) | Mạng mất kết nối | Cao | Đã xử lý ✅ |
 
 ---
 
@@ -117,3 +119,6 @@ robocopy D:\Backup\Documents C:\Users\user01\Documents /E
 - Luôn tạo snapshot trước khi thực hiện bất kỳ thay đổi quan trọng nào (cài phần mềm, chỉnh cấu hình, test sự cố) – rollback nhanh hơn nhiều so với cài lại từ đầu.
 - Kiểm tra `%errorlevel%` sau robocopy rất quan trọng: giá trị 0 là không có gì thay đổi, 1 là sao chép thành công, từ 8 trở lên mới là lỗi thực sự.
 - Nên chạy `sfc /scannow` sau mỗi lần cài phần mềm lớn hoặc khi hệ thống có dấu hiệu bất thường để phát hiện file hệ thống bị hỏng sớm.
+- Khi xử lý ticket, luôn chụp ảnh triệu chứng trước khi sửa – đây là bằng chứng quan trọng và giúp tái hiện lại sự cố nếu cần.
+- Phân biệt các dấu hiệu trong Device Manager: mũi tên ↓ xám = disabled thủ công, dấu `!` vàng = driver lỗi – hai nguyên nhân khác nhau cần cách xử lý khác nhau.
+- Account Lockout Policy là công cụ bảo mật quan trọng, nhưng cần có quy trình mở khóa rõ ràng để IT support xử lý nhanh khi người dùng bị khóa tài khoản.
