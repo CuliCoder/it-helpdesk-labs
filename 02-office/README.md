@@ -93,7 +93,6 @@ Files làm việc: [`samples/ThongBaoNoiBo.docx`](samples/ThongBaoNoiBo.docx) ·
 | 13 | **Styles + Mục lục + Đánh số trang:** Văn bản "THÔNG BÁO NỘI BỘ – Quy trình hỗ trợ kỹ thuật 2026", dùng Heading 1/2, mục lục tự động tạo bằng References → Table of Contents, số trang ở footer | ![13-word-toc-pagenumber](images/13-word-toc-pagenumber.png) |
 | 14 | **Mail Merge:** Mailings → Start Mail Merge → Select Recipients từ `BangLuong-Thu.xlsx`, chèn trường «Họ tên» / «Mã NV» / «Phòng ban», Preview bản ghi NV004 – Phạm Minh Dũng | ![14-word-mailmerge](images/14-word-mailmerge.png) |
 | 15 | **Xuất PDF:** File → Export → Create PDF/XPS, kết quả [`ThongBaoNoiBo.pdf`](samples/ThongBaoNoiBo.pdf) (4 trang) | ![15-word-export-pdf](images/15-word-export-pdf.png) |
-| 16 | Snapshot `04-Office-Ready-for-Tickets` *(tạo trực tiếp trong VMware, không chụp ảnh riêng)* | — |
 
 ---
 
